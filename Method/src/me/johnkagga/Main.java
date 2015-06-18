@@ -36,7 +36,18 @@ public class Main {
         while (dispenser.dispense()){
             System.out.println("We are eating");
         }
-        dispenser.load(500);
-        System.out.println("Toooo much");
+
+        /*
+        we put code in try catch block
+        try: code that is likely going to cause an exception
+        catch: exception and display message to the user
+         */
+        try {
+            dispenser.load(500);
+            System.out.println("This will never happen");
+        } catch (IllegalArgumentException iae) {
+            System.out.println("There was an error");
+            System.out.printf("Because %s",iae.getMessage());
+        }
     }
 }
