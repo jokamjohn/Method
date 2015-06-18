@@ -35,7 +35,8 @@ public class PezDispenser {
 
     public void load (){
         //we are filling the dispenser with maximum prezs
-        mPezCount = MAX_PREZ;
+        //when this method is called, this is the default value
+        load(MAX_PREZ);
     }
 
     public boolean isEmpty () {
