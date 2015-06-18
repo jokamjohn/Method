@@ -42,4 +42,15 @@ public class PezDispenser {
         //checks for contents in the dispenser
         return mPezCount == 0;
     }
+
+    public boolean dispense(){
+        //return false if it is empty
+        boolean wasDispensed = false;
+        if (!isEmpty()){
+            mPezCount--;
+            //return true if it is not empty.
+            wasDispensed = true;
+        }
+        return wasDispensed;
+    }
 }
