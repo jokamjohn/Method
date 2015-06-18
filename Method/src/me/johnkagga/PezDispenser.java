@@ -37,4 +37,9 @@ public class PezDispenser {
         //we are filling the dispenser with maximum prezs
         mPezCount = MAX_PREZ;
     }
+
+    public boolean isEmpty () {
+        //checks for contents in the dispenser
+        return mPezCount == 0;
+    }
 }

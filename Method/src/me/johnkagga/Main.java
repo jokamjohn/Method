@@ -8,8 +8,7 @@ public class Main {
         This object initiates with a string object
          */
         PezDispenser dispenser = new PezDispenser("yoga");
-        System.out.printf("this is %s",dispenser.getCharacterName());
-
-
+        System.out.printf("this is %s\n",dispenser.getCharacterName());
+        System.out.print(dispenser.isEmpty());
     }
 }
