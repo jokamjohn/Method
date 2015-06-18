@@ -57,6 +57,16 @@ public class PezDispenser {
 
     public void load(int pezAmount){
         //user can increment mpezcount
-        mPezCount += pezAmount;
+        //We are adding an exception so that perAmount input does not exceed maximum(MAXPREZ)
+        int newAmount = mPezCount + pezAmount;
+        if (newAmount > MAX_PREZ){
+            throw new IllegalArgumentException("Too many pez entered");
+        }
+        //else the new mpezAmount will be
+        mPezCount =newAmount;
+
     }
+    /*
+    A method signature is a name and value of the method
+     */
 }
