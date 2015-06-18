@@ -29,5 +29,12 @@ public class Main {
         if (dispenser.isEmpty()){
             System.out.println("They are done");
         }
+        //add more pezs
+        dispenser.load(4);
+        dispenser.load(5);
+        //loop through them
+        while (dispenser.dispense()){
+            System.out.println("We are eating");
+        }
     }
 }
