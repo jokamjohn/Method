@@ -53,4 +53,9 @@ public class PezDispenser {
         }
         return wasDispensed;
     }
+
+    public void load(int pezAmount){
+        //user can increment mpezcount
+        mPezCount += pezAmount;
+    }
 }
