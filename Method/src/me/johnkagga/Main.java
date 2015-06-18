@@ -20,5 +20,14 @@ public class Main {
         if (!dispenser.isEmpty()){
             System.out.println("It is not empty");
         }
+
+        //loop through the stored prez. the while loop runs as long as its true
+        while (dispenser.dispense()){
+            System.out.println("We are eating");
+        }
+        //when it is empty
+        if (dispenser.isEmpty()){
+            System.out.println("They are done");
+        }
     }
 }
