@@ -36,5 +36,7 @@ public class Main {
         while (dispenser.dispense()){
             System.out.println("We are eating");
         }
+        dispenser.load(500);
+        System.out.println("Toooo much");
     }
 }
